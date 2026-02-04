@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 /* global */
 
 body {
     background-color: #AD0021;
+    background: #d6c7a8;
 }
 
 .navbar {
-    position: block;
     display: flex;
     margin: auto;
-    border: 3px #930335 solid;
-    border-radius: 35px;
-    background-color: #ffc0d6;
+    border-radius: 10px;
+    background-color: #9e9074;
     height: fit-content;
     width: 90%;
     padding: 10px;
@@ -22,50 +23,46 @@ body {
     border-radius: 25px;
     background-color: #d2044c;
     color: white;
-    font-family: 'Calibri';
+    font-family: 'Oswald';
+    text-decoration: none;
     font-weight: bold;
     padding-inline: 35px;
     padding-block: 5px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .navbar a:hover {
     background-color: #ff82ae;
-    transition: 0.5s;
 }
 
 /* homepage */
 
 #homepage {
-    position: block;
-    display: grid;
-    margin: auto;
-    border: 3px #930335 solid;
-    background: #d6c7a8;
-    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 90%;
-    margin-top: 20px;
-    padding: 10px;
+    margin: 20px auto;
 }
 
-#homepage .description {
+
+.description {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .description img {
-    margin: auto;
     width: 100px;
-    border-radius: 100px;
-    border: 2px #930335 solid;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .description p {
-    width: 25%;
-    font-family: 'Calibri';
-    font-weight: bold;
-    text-align: justify;
-    margin-right: 150px;
-    height: 150px;
+    width: 40%;
+    font-family: Oswald;
 }
 
 p .header {
@@ -75,56 +72,58 @@ p .header {
 
 .main {
     display: flex;
-    border: 3px #930335 solid;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
     width: 55%;
-    margin: auto;
-    margin-top: 20px;
     height: 550px;
-    background: url(media/personal.jpeg);
-    background-size: cover;
+    margin: auto;
+    border-radius: 10px;
+    background: url(media/personal.jpeg) center / cover no-repeat;
 }
 
 .main .facebook {
     cursor: pointer;
     position: absolute;
     display: flex;
-    font-family: Calibri;
+    font-family: Oswald;
     color: white;
     font-weight: bold;
     font-size: 20px;
     align-items: center;
     justify-content: center;
     background: rgba(147, 3, 53, 0.85);
-    height: 10%;
-    width: 20%;
-    top: 60%;
-    left: 70%;
+    height: 20%;
+    width: 50%;
+    top: 70%;
+    left: 90%;
+    text-decoration: none;
     transform: translate(-50%, -50%);
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .main .spotify {
     cursor: pointer;
     position: absolute;
     display: flex;
-    font-family: Calibri;
+    font-family: Oswald;
     color: white;
     font-weight: bold;
     font-size: 20px;
     align-items: center;
     justify-content: center;
-    background: rgba(147, 3, 53, 0.85);
+    background: transparent;
     height: 35%;
-    width: 20%;
-    top: 60%;
-    left: 30%;
+    width: 35%;
+    top: 30.5%;
+    left: 0%;
     transform: translate(-50%, -50%);
-    border-radius: 10px;
+
 }
 
 .main .facebook:hover {
     background: rgba(147, 3, 53, 1);
-    transition: 1.5s;
 }
 
 .main .facebook img {
@@ -135,3 +134,5 @@ p .header {
     border-radius: 100px;
     border: 4px #930335 solid;
 }
+
+/* reference: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
