@@ -1,138 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=League+Script&family=Luxurious+Script&family=Oswald:wght@200..700&family=Parisienne&display=swap');
 
 /* global */
 
 body {
-    background-color: #AD0021;
-    background: #d6c7a8;
+    background: white;
+
 }
 
 .navbar {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     margin: auto;
-    border-radius: 10px;
-    background-color: #9e9074;
+    margin-top: 35px;
+    background: none;
     height: fit-content;
-    width: 90%;
-    padding: 10px;
+    width: 80%;
 }
 
 .navbar a {
-    margin: auto;
-    border: 2px #930335 solid;
-    border-radius: 25px;
-    background-color: #d2044c;
-    color: white;
-    font-family: 'Oswald';
+    color: black;
+    font-family: 'Calibri';
+    font-size: 20px;
     text-decoration: none;
-    font-weight: bold;
-    padding-inline: 35px;
-    padding-block: 5px;
+    margin-inline: auto;
     cursor: pointer;
     transition: 0.5s;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#sitename {
+    margin-right: auto;
+    cursor: default;
+    word-spacing: -8px;
 }
 
 .navbar a:hover {
-    background-color: #ff82ae;
+    text-decoration: underline;
 }
 
-/* homepage */
-
-#homepage {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 90%;
-    margin: 20px auto;
-}
-
-
-.description {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.description img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.description p {
-    width: 40%;
-    font-family: Oswald;
-}
-
-p .header {
-    font-weight: bolder;
-    font-size: 25px;
-}
-
-.main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 55%;
-    height: 550px;
-    margin: auto;
-    border-radius: 10px;
-    background: url(media/personal.jpeg) center / cover no-repeat;
-}
-
-.main .facebook {
-    cursor: pointer;
-    position: absolute;
-    display: flex;
-    font-family: Oswald;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    background: rgba(147, 3, 53, 0.85);
-    height: 20%;
-    width: 50%;
-    top: 70%;
-    left: 90%;
+#sitename:hover {
     text-decoration: none;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    transition: 0.5s;
 }
 
-.main .spotify {
-    cursor: pointer;
-    position: absolute;
-    display: flex;
-    font-family: Oswald;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    height: 35%;
-    width: 35%;
-    top: 30.5%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-
+.line {
+    border-bottom: 1px solid black;
+    width: 95%;
+    margin-inline: auto;
+    margin-block: 0;
 }
 
-.main .facebook:hover {
-    background: rgba(147, 3, 53, 1);
-}
-
-.main .facebook img {
-    position: absolute;
-    left: 2.5%;
-    height: 80%;
-    aspect-ratio: 1;
-    border-radius: 100px;
-    border: 4px #930335 solid;
+.lux {
+    font-family: "Parisienne", cursive;
+    font-size: 40px;
+    font-weight: 100;
 }
 
 /* reference: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
