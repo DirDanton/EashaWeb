@@ -1,72 +1,63 @@
 body {
     display: block;
-    background: url(media/skillsbg.jpeg);
-    background-size: cover;
-}
-
-#cover {
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,0.6);
-}
-
-.navbar a {
-    color: white;
 }
 
 h1 {
-    position: absolute;
-    top: 50%;
-    left: 38%;
-    transform: translate(-50%, -50%);
-    font-family: 'Parisienne';
-    width: 50%;
-    font-size: 150px;
-    text-wrap: wrap;
-    line-height: 0.9;
-    color: white;
-    transition: 0.5s;
+    margin-top: 220px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Satoshi';
+    text-transform: uppercase;
 }
 
 
 p {
-    font-family: Oswald;
-    color: white;
+    font-family: 'Satoshi';
+    color: black;
     width: 100%;
 }
 
 .skills-list {
     display: flex;
     margin-inline: auto;
-    margin-top: 15%;
-    margin-right: 150px;
+    margin-top: 100px;
     justify-content: space-between;
     padding-inline: 50px;
-    width: 50%;
+    width: 95%;
 }
 
 .skills-list .skill {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5px;
     height: 150px;
     width: 32%;
     height: 400px;
     transition: 0.5s;
-    background-color: rgba(255,255,255,0.5);
+}
+
+.skill:last-of-type {
+    border: none;
 }
 
 .skill h3 {
-    font-family: 'Instrument Serif';
+    font-size: 40px;
+    margin-top: 0;
+    width: 70%;
+    font-family: 'Satoshi';
+    margin-inline: auto;
     text-align: center;
 }
 
 .skill p {
     text-align: center;
+    margin-inline: auto;
+    width: 70%;
+}
+
+.vline {
+    border: 1px solid black;
+    height: 350px;
+    margin-block: auto;
 }
