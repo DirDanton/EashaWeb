@@ -1,6 +1,4 @@
-body {
-    display: block;
-}
+/* Main container style */
 
 #project {
     width: 90%;
@@ -12,11 +10,15 @@ body {
     justify-content: center;
 }
 
+/* Heading style */
+
 h1 {
     text-transform: uppercase;
     font-family: 'Satoshi';
     font-size: 20px;
 }
+
+/* Subheading style */
 
 h2 {
     text-align: center;
@@ -27,38 +29,49 @@ h2 {
     width: 50%;
 }
 
+/* Projects card container style */
+
 #projects {
     margin-top: 40px;
     width: 65%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+/* Projects card style */
+
 .project {
-    width: 320px;
-    height: 500px;
+    width: 35vh;
+    height: 55vh;
     border: 2px solid black;
     border-bottom: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-inline: auto;
+    margin-block: 10px;
 }
 
+/* Projects thumbnail style */
+
 .project .thumbnail {
-    background: url(media/easha-about.jpeg);
     background-size: cover;
     width: 100%;
     border-bottom: 1px solid black;
     height: 50%;
 }
 
+/* Heading style */
+
 .project h1 {
     margin-top: 40px;
     text-align: center;
     font-size: 18px;
 }
+
+/* Project parahraph style */
 
 .project h3 {
     font-family: 'Satoshi';
@@ -68,6 +81,8 @@ h2 {
     margin-top: 5px;
     font-size: 15px;
 }
+
+/* Project hyperlink button style */
 
 .project a {
     margin-top: auto;
@@ -88,4 +103,6 @@ h2 {
 .project a:hover {
     background: white;
     color: black;
+    word-spacing: 2px;
+    letter-spacing: 5px;
 }

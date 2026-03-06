@@ -1,3 +1,5 @@
+/* Homepage content container */
+
 #homepage {
     display: flex;
     flex-direction: column;
@@ -7,6 +9,8 @@
     align-items: center;
 }
 
+/* Heading style */
+
 h1 .lux {
     position: absolute;
     top: 45%;
@@ -14,15 +18,18 @@ h1 .lux {
     width: 100%;
     text-align: center;
     transform: translate(-50%, -50%);
-    font-size: 250px;
+    font-size: 12vw;
     font-weight: 100;
+    letter-spacing: 1px;
     color: black;
+    transition: 0.5s;
 }
 
-h1 .a2 {
-  top: 61%;  
-  left: 52%;
+h1 .lux:hover {
+    letter-spacing: 5px;
 }
+
+/* Subheading style */
 
 h2 {
     position: absolute;
@@ -31,11 +38,13 @@ h2 {
     transform: translate(-50%, -50%);
     font-family: 'Satoshi';
     word-spacing: 5px;
-    font-size: 25px;
+    font-size: 1.5vw;
     width: 70%;
     text-align: center;
     word-wrap: normal;
 }
+
+/* About me hyperlink button style */
 
 #abtme {
     position: absolute;
@@ -58,4 +67,6 @@ h2 {
 #abtme:hover {
     background: white;
     color: black;
+    word-spacing: 2px;
+    letter-spacing: 5px;
 }

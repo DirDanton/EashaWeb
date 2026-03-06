@@ -1,4 +1,10 @@
+/* Font import from google font and font files */
+
+/* google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=League+Script&family=Luxurious+Script&family=Oswald:wght@200..700&family=Parisienne&display=swap');
+
+/* fonts/ folder */
 
 @font-face {
   font-family: 'Satoshi';
@@ -12,10 +18,17 @@
 
 /* global */
 
-body {
-    background: white;
+/* global body style */
 
+body {
+    display: flex;
+    background: white;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
+
+/* global navbar style */
 
 .navbar {
     position: absolute;
@@ -29,6 +42,8 @@ body {
     height: fit-content;
     width: 80%;
 }
+
+/* global navbar button style */
 
 .navbar a {
     color: black;
@@ -48,9 +63,13 @@ body {
     text-decoration: underline;
 }
 
+/* navbar site name (portfolio) style */
+
 #sitename:hover {
     text-decoration: none;
 }
+
+/* seperator lines style */
 
 .line {
     border-bottom: 1px solid black;
@@ -58,6 +77,8 @@ body {
     margin-inline: auto;
     margin-block: 0;
 }
+
+/* Cursive font applyer style */
 
 .lux {
     font-family: "Pencerio Hairline", cursive;
@@ -70,6 +91,17 @@ body {
     cursor: default;
     word-spacing: -8px;
     font-size: 25px;
+}
+
+/* global footer style */
+
+footer {
+    margin-top: auto;
+    padding-block: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Satoshi';
+    background-color: black;
 }
 
 /* reference: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
